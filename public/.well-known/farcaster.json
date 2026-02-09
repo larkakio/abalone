@@ -1,0 +1,33 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Abalone",
+    "homeUrl": "https://YOUR-DOMAIN.vercel.app/",
+    "iconUrl": "https://YOUR-DOMAIN.vercel.app/icon.png",
+    "imageUrl": "https://YOUR-DOMAIN.vercel.app/hero-image.png",
+    "buttonTitle": "Play Now",
+    "splashImageUrl": "https://YOUR-DOMAIN.vercel.app/hero-image.png",
+    "splashBackgroundColor": "#0a0e1a",
+    "webhookUrl": "https://YOUR-DOMAIN.vercel.app/api/webhook",
+    "subtitle": "Classic Strategy Board Game",
+    "description": "Push your opponent's marbles off the hexagonal board. Play the award-winning abstract strategy game with smooth mobile controls on Base!",
+    "screenshotUrls": [
+      "https://YOUR-DOMAIN.vercel.app/screenshot-1.png",
+      "https://YOUR-DOMAIN.vercel.app/screenshot-2.png"
+    ],
+    "primaryCategory": "games",
+    "tags": ["strategy", "board-game", "two-player", "base"],
+    "heroImageUrl": "https://YOUR-DOMAIN.vercel.app/hero-image.png",
+    "tagline": "Strategy Meets Elegance",
+    "ogTitle": "Abalone - Strategy Game",
+    "ogDescription": "Classic board game reimagined for mobile on Base",
+    "ogImageUrl": "https://YOUR-DOMAIN.vercel.app/hero-image.png",
+    "noindex": false,
+    "requiredChains": ["eip155:8453"]
+  }
+}
