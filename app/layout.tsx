@@ -51,6 +51,7 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-capable': 'yes',
     'fc:miniapp': JSON.stringify(FC_EMBED),
     'fc:frame': JSON.stringify(FC_EMBED),
+    'base:app_id': '69899e5173cda529e5cd6867',
   },
 };
 
