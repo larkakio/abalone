@@ -17,21 +17,6 @@ const geistMono = localFont({
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://abalone-ruby.vercel.app';
 
-const FC_EMBED = {
-  version: '1',
-  imageUrl: `${APP_URL}/hero-image.png`,
-  button: {
-    title: 'Play Abalone',
-    action: {
-      type: 'launch_frame',
-      name: 'Abalone',
-      url: APP_URL,
-      splashImageUrl: `${APP_URL}/hero-image.png`,
-      splashBackgroundColor: '#0a0e1a',
-    },
-  },
-};
-
 export const metadata: Metadata = {
   title: "Abalone - Strategy Board Game",
   description: "Push your opponent's marbles off the hexagonal board in this award-winning abstract strategy game. Play on Base!",
@@ -49,8 +34,6 @@ export const metadata: Metadata = {
     'theme-color': '#0a0e1a',
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
-    'fc:miniapp': JSON.stringify(FC_EMBED),
-    'fc:frame': JSON.stringify(FC_EMBED),
     'base:app_id': '69899e5173cda529e5cd6867',
   },
 };

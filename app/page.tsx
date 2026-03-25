@@ -1,17 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import { FarcasterReady } from '@/components/FarcasterReady';
 import { GameBoard } from '@/components/GameBoard';
 import { ScoreDisplay } from '@/components/ScoreDisplay';
 import { GameControls } from '@/components/GameControls';
 import { Tutorial } from '@/components/Tutorial';
-import { useFarcasterSDK } from '@/hooks/useFarcasterSDK';
+import { useOpenExternalUrl } from '@/hooks/useOpenExternalUrl';
 import { COLORS } from '@/utils/constants';
 
 export default function Home() {
   const [showTutorial, setShowTutorial] = useState(true);
-  const { openUrl } = useFarcasterSDK();
+  const { openUrl } = useOpenExternalUrl();
 
   const handleShare = async () => {
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || window.location.origin;
@@ -23,8 +22,6 @@ export default function Home() {
 
   return (
     <>
-      <FarcasterReady />
-      
       {showTutorial && <Tutorial onComplete={() => setShowTutorial(false)} />}
       
       <main

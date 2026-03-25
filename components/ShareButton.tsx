@@ -1,13 +1,13 @@
 'use client';
 
-import { useFarcasterSDK } from '@/hooks/useFarcasterSDK';
+import { useOpenExternalUrl } from '@/hooks/useOpenExternalUrl';
 
 interface ShareButtonProps {
   message?: string;
 }
 
 export function ShareButton({ message }: ShareButtonProps) {
-  const { openUrl } = useFarcasterSDK();
+  const { openUrl } = useOpenExternalUrl();
 
   const handleShare = async () => {
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || window.location.origin;
